@@ -1,0 +1,48 @@
+NAME,DESCRIPTION,LOCATION,TIME,WEATHER,SUMMER,WINTER,FALL,SPRING,SUN,RAIN,WIND
+Pufferfish,Inflates when threatened.,"Ocean, Ginger Island oceans",12pm-4pm,Sun,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+Anchovy,A small silver fish found in the ocean. ,Ocean,Anytime,Any,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE
+Tuna,A large fish that lives in the ocean.,"Ocean, Ginger Island oceans",6am-7pm,Any,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE
+Sardine,A common ocean fish.,Ocean,6am-7pm,Any,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+Bream,A fairly common river fish that becomes active at night.,River (Town+Forest),6am-2am,Any,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+Largemouth Bass,A popular fish that lives in lakes.,Mountain Lake,6am-7pm,Any,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+Smallmout Bass,A freshwater fish that is very sensitive to pollution.,"River (Town), Forest Pond",Anytime,Any,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE
+Rainbow Trout,A freshwater trout with colorful markings.,"River (Town+Forest), Mountain Lake",6am-7pm,Sun,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+Salmon,Swims upstream to lay its eggs.,River (Town+Forest),6am-7pm,Any,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,TRUE
+Walleye,A freshwater fish caught at night.,"River (Town+Forest), Forest Pond, Mountain Lake",12pm-2am,Rain,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE
+Perch,A freshwater fish of the winter.,"River (Town+Forest), Forest Pond, Mountain Lake",Anytime,Any,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE
+Carp,A common pond fish.,"Mountain Lake, Secret Woods Pond, The Sewers",Anytime,Any,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+Catfish,An uncommon fish found in streams.,"River (Town+Forest), Secret Woods Pond, Witch's Swamp",6am-12am,Rain,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE
+Pike,A freshwater fish that's difficult to catch.,"River (Town+Forest), Forest Pond",Anytime,Any,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE
+Sunfish,A common river fish.,River (Town+Forest),6am-7pm,"Sun, Wind",TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE
+Red Mullet,Long ago these were kept as pets.,Ocean,6am-7pm,Any,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE
+Herring,A common ocean fish.,Ocean,Anytime,Any,FALSE,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE
+Eel,"A long, slippery little fish.",Ocean,4pm-2am,Rain,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE
+Octopus,A mysterious and intelligent creature.,Ocean,6am-1pm,Any,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE
+Red Snapper,A popular fish with a nice red color.,Ocean,6am-7pm,Rain,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE
+Squid,A mysterious and intelligent creature.,Ocean,6pm-2am,Any,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE
+Sea Cucumber,"A slippery, slimy creature found on the ocean floor.",Ocean,6am-7pm,Any,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE
+Super Cucumber,"A rare, purple variety of sea cucumber.","Ocean, Ginger Island oceans",6pm-2am,Any,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,TRUE
+Ghostfish,"A pale, blind fish found in underground lakes.","Mines (20, 60), Ghost Drops",Anytime,Any,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+Stonefish,A bizarre fish that's shaped like a brick. ,Mines 20F,Anytime,Any,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+Ice Pip,A rare fish that thrives in extremely cold conditions. ,Mines 60F,Anytime,Any,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+Lava Eel,It can somehow survive in pools of red-hot lava. ,"Mines 100F, Volcano Caldera",Anytime,Any,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+Sandfish,It tries to hide using camouflage.,The Desert,6am-8pm,Any,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+Scorpion Carp,It's like a regular carp but with a sharp stinger.,The Desert (Requires fishing level 4),6am-8pm,Any,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+Flounder,"It lives on the bottom, so both eyes are on top of its head.","Ocean, Ginger Island oceans",6am-8pm,Any,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE
+Midnight Carp,This shy fish only feels comfortable at night.,"Mountain Lake, Cindersap Forest pond, Ginger Island pond and river",10pm-2am,Any,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE
+Sturgeon,An ancient bottom-feeder with a dwindling population. Females can live up to 150 years.,Mountain Lake,6am-7pm,Any,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE
+Tiger Trout,A rare hybrid trout that cannot bear offspring of its own.,River (Town+Forest),6am-7pm,Any,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE
+Bullhead,A relative of the catfish that eats a variety of foods off the lake bottom.,Mountain Lake,Anytime,Any,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+Tilapia,A primarily vegetarian fish that prefers warm water.,"Ocean, Ginger Island oceans",6am-2pm,Any,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,TRUE
+Chub,A common freshwater fish known for its voracious appetite.,"Forest River, Mountain Lake",Anytime,Any,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+Dorado,A fierce carnivore with brilliant orange scales.,River (Forest),6am-7pm,Any,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE
+Albacore,"Prefers temperature ""edges"" where cool and warm water meet.",Ocean,6am-11am 6pm-2am,Any,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE
+Shad,"Lives in a school at sea, but returns to the rivers to spawn.",River (Town+Forest),9am-2am,Rain,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE
+Lingcod,A fearsome predator that will eat almost anything it can cram into its mouth.,"River (Town+Forest), Mountain Lake",Anytime,Any,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE
+Halibut,A flat fish that lives on the ocean floor.,Ocean,6am-11am 7pm-2am,Any,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE
+Woodskip,A very sensitive fish that can only live in pools deep in the forest.,"Secret Woods Pond, Forest Farm",Anytime,Any,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+Void Salmon,"A salmon, twisted by void energy. The fresh meat is jet black, but rapidly turns pink when exposed to air.",Witch's Swamp,Anytime,Any,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+Slimejack,He's coated in a very thick layer of slime. He keeps slipping out of your hands!,Mutant Bug Lair,Anytime,Any,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+Stingray,"Despite having a toxic stinger, these fish are shy and prefer to avoid humans.",Pirate Cove (Ginger Island),Anytime,Any,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+Lionfish,"An aggressive, predatory fish with venomous spines.",Ginger Island Ocean,Anytime,Any,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+Blue Discus,A brightly colored tropical fish that is popular in aquariums.,Ginger Island Pond and Rivers,Anytime,Any,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
