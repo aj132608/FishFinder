@@ -3,9 +3,13 @@ import './App.css';
 import { Dropdown, Selection } from 'react-dropdown-now';
 import 'react-dropdown-now/style.css';
 import React, { useState } from 'react';
+import SeasonDropdown from './components/dropdown';
 
-const defaultSeason = "Summer";
-const defaultWeather = "Sun";
+const seasonOptions = ["Summer", "Winter", "Spring", "Fall"];
+const weatherOptions = ["Sun", "Rain", "Wind"];
+
+const defaultSeason = seasonOptions[0];
+const defaultWeather = weatherOptions[0];
 
 // const [season, setSeasonVal] = useState(
 //   defaultSeason
@@ -21,37 +25,37 @@ const defaultWeather = "Sun";
 //   setWeatherVal(weather);
 // }
 
-function useWeather(defaultValue) {
-  const [weather, setWeatherVal] = useState(
-    defaultValue || defaultWeather,
-  );
-  function setWeather(weather) {
-    setWeatherVal(weather);
-  }
-  return {
-    setWeather,
-    weather,
-  };
-}
+// function useWeather(defaultValue) {
+//   const [weather, setWeatherVal] = useState(
+//     defaultValue || defaultWeather,
+//   );
+//   function setWeather(weather) {
+//     setWeatherVal(weather);
+//   }
+//   return {
+//     setWeather,
+//     weather,
+//   };
+// }
 
-function useSeason(defaultValue) {
-  const [season, setSeasonVal] = useState(
-    defaultValue || defaultSeason,
-  );
-  function setSeason(season) {
-    setSeasonVal(season);
-  }
-  return {
-    setSeason,
-    season,
-  };
-}
+// function useSeason(defaultValue) {
+//   const [season, setSeasonVal] = useState(
+//     defaultValue || defaultSeason,
+//   );
+//   function setSeason(season) {
+//     setSeasonVal(season);
+//   }
+//   return {
+//     setSeason,
+//     season,
+//   };
+// }
 
-function get_fish() {
-  console.log('Looking for fish with these constraints: ')
-  console.log('Season: ', season)
-  console.log('Weather: ', weather)
-}
+// function get_fish() {
+//   console.log('Looking for fish with these constraints: ')
+//   console.log('Season: ', season)
+//   console.log('Weather: ', weather)
+// }
 
 function App() {
   return (
@@ -59,7 +63,7 @@ function App() {
       <header className="App-header">
         <h1 className='App-title'>Stardew Valley Fish Finder</h1>
 
-        <div className='dropdown-container'>
+        {/* <div className='dropdown-container'>
           <div className='Season-Dropdown'>
             <label>Select a Season</label>
             <Dropdown
@@ -92,12 +96,42 @@ function App() {
               onOpen={() => console.log('open!')}
             />
           </div>
-        </div>
-        <button className='submit-button' onClick={get_fish}>Submit</button>
+        </div> */}
+
+        {/* <div className='dropdown-container'>
+          
+          <div className='Season-Dropdown'>
+            <h3>Season</h3>
+            <select className='season-dropdown'>
+              <option value={seasonOptions[0]}>{seasonOptions[0]}</option>
+              <option value={seasonOptions[1]}>{seasonOptions[1]}</option>
+              <option value={seasonOptions[2]}>{seasonOptions[2]}</option>
+              <option value={seasonOptions[3]}>{seasonOptions[3]}</option>
+            </select>
+          </div>
+          <div className='Weather-Dropdown'>
+            <h3>Weather</h3>
+            <select className='weather-dropdown'>
+              <option value={weatherOptions[0]}>{weatherOptions[0]}</option>
+              <option value={weatherOptions[1]}>{weatherOptions[1]}</option>
+              <option value={weatherOptions[2]}>{weatherOptions[2]}</option>
+            </select>
+          </div>
+        </div> */}
+
+        <SeasonDropdown/>
+        
+        <button className='submit-button'>Submit</button>
       </header>
 
     </div>
   );
+}
+
+function DropdownItem(props) {
+  return (
+    <li>{props.text}</li>
+  )
 }
 
 export default App;

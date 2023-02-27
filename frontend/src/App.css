@@ -39,11 +39,20 @@
 }
 
 .Season-Dropdown {
-  margin-inline-end: 20px;
+  gap: 50px;
 }
 
+.Season-Dropdown h3{
+  margin: auto;
+}
+
+
 .Weather-Dropdown {
-  margin-inline-start: 20px;
+  margin-left: 50px;
+}
+
+.Weather-Dropdown h3{
+  margin: auto;
 }
 
 .submit-button {
