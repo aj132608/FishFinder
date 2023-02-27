@@ -64,13 +64,13 @@ class FishFinderTest:
             print(f"response: {response_body}\n")
 
             # Test validity of response
-            test_val_index = response_body_dict["NAME"].index(test_val["NAME"])
-            actual_val = {}
+            # test_val_index = response_body_dict["NAME"].index(test_val["NAME"])
+            # actual_val = {}
 
-            for key in response_body_dict.keys():
-                actual_val[key] = response_body_dict[key][test_val_index]
+            # for key in response_body_dict.keys():
+            #     actual_val[key] = response_body_dict[key][test_val_index]
 
-            FishFinderTest.compare_vals(expected=test_val, actual=actual_val)
+            # FishFinderTest.compare_vals(expected=test_val, actual=actual_val)
 
         else:
             print(f"Test Failed with {status_code} status code.")

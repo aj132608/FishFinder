@@ -29,17 +29,13 @@ def fish_query():
     except KeyError:
         return "Error: Missing required key value pair. (season and weather)"
     
-
     requested_fish = FISH_DATA[(FISH_DATA[(season.upper())] == True) & (FISH_DATA[weather.upper()] == True)]
+
+    slim_requested_fish = requested_fish[IMPORTANT_COLUMNS]
     
-    requested_fish_json_raw = json.loads(requested_fish.to_json())
+    requested_fish_dict = slim_requested_fish.transpose().to_dict()
 
-    requested_fish_json = {}
-
-    for column in IMPORTANT_COLUMNS:
-        requested_fish_json[column] = list(requested_fish_json_raw[column].values())
-
-    return requested_fish_json
+    return requested_fish_dict
 
 
 if __name__ == "__main__":
