@@ -1,7 +1,6 @@
 from flask import Flask, request
 from flask_cors import CORS, cross_origin
 import pandas as pd
-import json
 
 FISH_DATA_LOCATION = 'data/fish_data.csv'
 FISH_DATA = pd.read_csv (FISH_DATA_LOCATION)
@@ -29,13 +28,14 @@ def fish_query():
     except KeyError:
         return "Error: Missing required key value pair. (season and weather)"
     
+    # Filter out fish that don't meet the criteria 
     requested_fish = FISH_DATA[(FISH_DATA[(season.upper())] == True) & (FISH_DATA[weather.upper()] == True)]
-
-    slim_requested_fish = requested_fish[IMPORTANT_COLUMNS]
     
-    requested_fish_dict = slim_requested_fish.transpose().to_dict()
+    # Condense the df to only include important columns needed for the frontend
+    # and return it as a list of dicts representing each fish 
+    requested_fish_rows = requested_fish[IMPORTANT_COLUMNS].to_dict('records')
 
-    return requested_fish_dict
+    return {"fish_data": requested_fish_rows}
 
 
 if __name__ == "__main__":

@@ -1,0 +1,26 @@
+.dropdown-container {
+    align-items: center;
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.weather-label {
+    margin-right: 20px;
+}
+
+.weather-dropdown {
+    height: 28px;
+}
+
+.season-dropdown {
+    height: 28px;
+}
+
+.season-label {
+    margin-right: 20px;
+}
+
+.season-container {
+    margin-right: 20px;
+}

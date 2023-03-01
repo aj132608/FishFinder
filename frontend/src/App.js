@@ -1,78 +1,50 @@
-// import logo from './logo.svg';
 import './App.css';
-import { Dropdown, Selection } from 'react-dropdown-now';
-import 'react-dropdown-now/style.css';
-import React, { useState } from 'react';
-import SeasonDropdown from './components/dropdown';
+import React, { useState, useEffect } from 'react';
+import useDropdown from './components/dropdown';
+import Table from './components/table';
 
-const seasonOptions = ["Summer", "Winter", "Spring", "Fall"];
-const weatherOptions = ["Sun", "Rain", "Wind"];
-
-const defaultSeason = seasonOptions[0];
-const defaultWeather = weatherOptions[0];
-
-// const [season, setSeasonVal] = useState(
-//   defaultSeason
-// );
-// function setSeason(season) {
-//   setSeasonVal(season);
-// }
-
-// const [weather, setWeatherVal] = useState(
-//   defaultWeather
-// );
-// function setWeather(weather) {
-//   setWeatherVal(weather);
-// }
-
-// function useWeather(defaultValue) {
-//   const [weather, setWeatherVal] = useState(
-//     defaultValue || defaultWeather,
-//   );
-//   function setWeather(weather) {
-//     setWeatherVal(weather);
-//   }
-//   return {
-//     setWeather,
-//     weather,
-//   };
-// }
-
-// function useSeason(defaultValue) {
-//   const [season, setSeasonVal] = useState(
-//     defaultValue || defaultSeason,
-//   );
-//   function setSeason(season) {
-//     setSeasonVal(season);
-//   }
-//   return {
-//     setSeason,
-//     season,
-//   };
-// }
-
-// function get_fish() {
-//   console.log('Looking for fish with these constraints: ')
-//   console.log('Season: ', season)
-//   console.log('Weather: ', weather)
-// }
+const apiEndpoint = "http://localhost:8080/fish_query"
 
 function App() {
+  const {render, season, weather} = useDropdown();
+  const [fishData, setFishData] = useState([]);
+  const [displayTable, setDisplayTable] = useState(<h1>Not Loaded Yet</h1>);
+
+  async function fetchData() {
+    const requestOptions = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ 
+        "season": season,
+        "weather": weather
+      })
+    };
+    const response = await fetch(apiEndpoint, requestOptions);
+    const result = await response.json();
+    console.log(result['fish_data']);
+    setFishData(result['fish_data']);
+    return result;
+  }
+
+  useEffect(() => {
+    if (fishData.length !== 0) {
+      console.log("useEffect Code")
+      console.log(fishData);
+      setDisplayTable(<Table fishData={fishData}/>);
+    }
+  }, [fishData])
+
   return (
     <div className="App">
       <header className="App-header">
         <h1 className='App-title'>Stardew Valley Fish Finder</h1>
-        <SeasonDropdown/>        
+        {render}
+        <button className='submit-button' onClick={fetchData}>Submit</button>
+        {displayTable}
       </header>
 
     </div>
   );
-}
-
-function DropdownItem(props) {
-  return (
-    <li>{props.text}</li>
-  )
 }
 
 export default App;
