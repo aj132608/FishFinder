@@ -7,18 +7,22 @@
 
 .weather-label {
     margin-right: 20px;
+    padding-right: 9px;
 }
 
 .weather-dropdown {
     height: 28px;
+    width: 100px;
 }
 
 .season-dropdown {
     height: 28px;
+    width: 100px;
 }
 
 .season-label {
     margin-right: 20px;
+    padding-right: 20.35px;
 }
 
 .season-container {
