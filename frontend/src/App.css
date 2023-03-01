@@ -32,25 +32,11 @@
   color: #61dafb;
 }
 
-.dropdown-container {
-  align-items: center;
-  display: inline-flex;
-  margin: 20px;
-}
-
-.Season-Dropdown {
-  margin-inline-end: 20px;
-}
-
-.Weather-Dropdown {
-  margin-inline-start: 20px;
-}
-
 .submit-button {
   align-items: left;
-  max-width: 200px;
+  max-width: 170px;
   margin-left: 20px;
-  height: 40px;
+  height: 28px;
 }
 
 @keyframes App-logo-spin {

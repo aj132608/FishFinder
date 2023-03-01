@@ -4,7 +4,7 @@ import json
 
 class FishFinderTest:
     def __init__(self, url='http://localhost:8080/'):
-        self.url = url
+        self.url = url        
 
     def get_all_fish_test(self):
         endpoint = self.url+'get_all_fish'
@@ -28,8 +28,16 @@ class FishFinderTest:
             "season": season,
             "weather": weather
         }
+        test_val = {
+            'NAME': "Ghostfish",
+            "DESCRIPTION": "A pale, blind fish found in underground lakes.",
+            "LOCATION": "Mines (20, 60), Ghost Drops",
+            "TIME": "Anytime"
+        }
 
         print("\n          /fish_query Test           \n")
+
+        print(f"Request: {json_message}\n")
 
         # Using the requests library, send a POST request with the following
         # message to the URL.
@@ -42,7 +50,8 @@ class FishFinderTest:
 
         if status_code == 200:
             print("Test Passed!")
-            # print(f"response: {response_body}\n")
+            print(f"response: {response_body}\n")
+
         else:
             print(f"Test Failed with {status_code} status code.")
             print(f"response: {response_body}\n")
@@ -59,12 +68,5 @@ class FishFinderTest:
 if __name__ == "__main__":
     test_obj = FishFinderTest()
     
-    # all_fish = test_obj.get_all_fish_test()
+    all_fish = test_obj.get_all_fish_test()
     req_fish_json = test_obj.fish_query_test("FALL", "RAIN")
-    req_fish_list = list(req_fish_json["NAME"].values())
-
-    # print(list(all_fish["NAME"].values()),"\n")
-    print(len(req_fish_list), " fish found! \n")
-    
-    for fish in req_fish_list:
-        print(fish)
