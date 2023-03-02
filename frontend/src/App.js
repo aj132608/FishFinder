@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import useDropdown from './components/dropdown';
 import Table from './components/table';
 
-const apiEndpoint = "http://localhost:8080/fish_query"
+const apiEndpoint = "https://flask-fish-api.herokuapp.com/fish_query"
 
 function App() {
   const {render, season, weather} = useDropdown();
