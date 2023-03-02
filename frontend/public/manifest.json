@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Fish Finder",
+  "name": "Trouble finding a fish? This can help with that!",
   "icons": [
     {
       "src": "favicon.ico",
