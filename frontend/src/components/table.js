@@ -43,8 +43,9 @@ function Table({fishData}) {
                         {...column.getHeaderProps()}
                         style={{
                         borderBottom: 'solid 3px red',
-                        background: 'aliceblue',
-                        color: 'black',
+                        borderColor: '#007448',
+                        background: '#03A007',
+                        color: 'white',
                         fontWeight: 'bold',
                         }}
                     >

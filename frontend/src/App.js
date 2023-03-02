@@ -1,4 +1,5 @@
 import './App.css';
+import title from './Stardew Valley Fish Finder Title.png';
 import React, { useState, useEffect } from 'react';
 import useDropdown from './components/dropdown';
 import Table from './components/table';
@@ -8,7 +9,7 @@ const apiEndpoint = "https://flask-fish-api.herokuapp.com/fish_query"
 function App() {
   const {render, season, weather} = useDropdown();
   const [fishData, setFishData] = useState([]);
-  const [displayTable, setDisplayTable] = useState(<h1>Not Loaded Yet</h1>);
+  const [displayTable, setDisplayTable] = useState(<h1></h1>);
 
   async function fetchData() {
     const requestOptions = {
@@ -37,10 +38,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className='App-title'>Stardew Valley Fish Finder</h1>
+        {/* <h1 className='App-title'>Stardew Valley Fish Finder</h1> */}
+        <img src={title} width={450} height={300}></img>
+        <hr></hr>
         {render}
         <button className='submit-button' onClick={fetchData}>Submit</button>
-        {displayTable}
+        <div className='output-div'>
+          {displayTable}
+        </div>
       </header>
 
     </div>

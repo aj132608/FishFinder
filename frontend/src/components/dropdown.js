@@ -25,7 +25,7 @@ function useDropdown() {
     weather,
     render:(
       <div className='dropdown-container'>
-        <div className='season-container'>
+        <div className='Season-container'>
           <label className='season-label'>
             Season
           </label>
@@ -36,7 +36,7 @@ function useDropdown() {
             <option value={seasonOptions[3]}>{seasonOptions[3]}</option>
           </select>
         </div>
-        <div className='weather-conainter'>
+        <div className='Weather-conainter'>
           <label className='weather-label'>
             Weather
           </label>
