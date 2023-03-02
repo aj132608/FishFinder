@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/FishFinder/static/css/main.7288286c.css",
-    "main.js": "/FishFinder/static/js/main.9c9870e4.js",
+    "main.js": "/FishFinder/static/js/main.07fbdbe6.js",
     "static/js/787.cda612ba.chunk.js": "/FishFinder/static/js/787.cda612ba.chunk.js",
     "index.html": "/FishFinder/index.html",
     "main.7288286c.css.map": "/FishFinder/static/css/main.7288286c.css.map",
-    "main.9c9870e4.js.map": "/FishFinder/static/js/main.9c9870e4.js.map",
+    "main.07fbdbe6.js.map": "/FishFinder/static/js/main.07fbdbe6.js.map",
     "787.cda612ba.chunk.js.map": "/FishFinder/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7288286c.css",
-    "static/js/main.9c9870e4.js"
+    "static/js/main.07fbdbe6.js"
   ]
 }
