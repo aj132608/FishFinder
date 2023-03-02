@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/FishFinder/static/css/main.7288286c.css",
-    "main.js": "/FishFinder/static/js/main.07fbdbe6.js",
+    "main.css": "/FishFinder/static/css/main.d49dc5ad.css",
+    "main.js": "/FishFinder/static/js/main.7a4855cd.js",
     "static/js/787.cda612ba.chunk.js": "/FishFinder/static/js/787.cda612ba.chunk.js",
+    "static/media/Stardew Valley Fish Finder Title.png": "/FishFinder/static/media/Stardew Valley Fish Finder Title.bc758f4f7771d125541f.png",
     "index.html": "/FishFinder/index.html",
-    "main.7288286c.css.map": "/FishFinder/static/css/main.7288286c.css.map",
-    "main.07fbdbe6.js.map": "/FishFinder/static/js/main.07fbdbe6.js.map",
+    "main.d49dc5ad.css.map": "/FishFinder/static/css/main.d49dc5ad.css.map",
+    "main.7a4855cd.js.map": "/FishFinder/static/js/main.7a4855cd.js.map",
     "787.cda612ba.chunk.js.map": "/FishFinder/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7288286c.css",
-    "static/js/main.07fbdbe6.js"
+    "static/css/main.d49dc5ad.css",
+    "static/js/main.7a4855cd.js"
   ]
 }
