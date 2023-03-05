@@ -2,35 +2,37 @@
     align-items: center;
     align-self: center;
     display: inline-block;
-    /* margin-left: 20px; */
     margin-bottom: 20px;
+    width: 40%;
 }
 
 .weather-label {
-    margin-right: 20px;
-    padding-right: 9px;
+    width: 30%;
+    float: left;
 }
 
 .weather-dropdown {
     height: 28px;
-    width: 300px;
+    width: 70%;
+    float: right;
 }
 
 .Weather-container {
     align-items: center;
     display: flex;
+    margin: 10px;
 }
 
 .season-dropdown {
     height: 28px;
-    width: 300px;
+    width: 70%;
+    float: right;
 }
 
 .season-label {
-    margin-right: 20px;
-    padding-right: 20.35px;
+    width: 30%;
 }
 
-.season-container {
-    margin-right: 20px;
+.Season-container {
+    margin-bottom: 20px;
 }

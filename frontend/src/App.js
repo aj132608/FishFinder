@@ -38,14 +38,22 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <h1 className='App-title'>Stardew Valley Fish Finder</h1> */}
-        <img src={title} width={450} height={300}></img>
+        <img src={title}></img>
         <hr></hr>
         {render}
         <button className='submit-button' onClick={fetchData}>Submit</button>
         <div className='output-div'>
           {displayTable}
         </div>
+        {/* <div className='promo-background-div'>
+          <p style={{textAlign: 'center'}}>Check out source code <a href='https://github.com/aj132608/FishFinder' 
+                                      target="_blank" rel="noreferrer noopener"> here</a>
+          </p>
+        </div> */}
+        <p>Check out source code <a href='https://github.com/aj132608/FishFinder' 
+                                    target="_blank" rel="noreferrer noopener"> here</a>
+        </p>
+        
       </header>
 
     </div>
