@@ -96,17 +96,3 @@ $ npm run deploy
 #### 6 Configure Github Pages
 
 To successfully host the webpage, you must go to the Github Pages settings and save. More info is in the documentation link at the top.
-
-### Backend
-
-Navigate to the project directory (backend):
-
-`cd backend`
-
-Install dependencies
-
-`pip install -r requirements.txt`
-
-Run the Flask Server:
-
-`python fish_backend.py`
