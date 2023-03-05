@@ -1,6 +1,8 @@
-# Stardew Valley Fish Finder
+![TitlePicture](frontend/WebappTitlePic.png)
 
-This project is a tool for Stardew Valley players/enthusiasts.
+This project is a tool for Stardew Valley players/enthusiasts. 
+Check it out [here](https://aj132608.github.io/FishFinder/). Data and style inspiration was drawn from 
+[Stardew Valley's Wiki page](https://stardewvalleywiki.com/Stardew_Valley_Wiki). Check out that webpage if you want even more info on Stardew Valley.
 
 ## Goal
 
@@ -13,7 +15,8 @@ on particular days in Stardew Valley given Season and Weather conditions.
 
 The frontend is built with React JS. It's a simple webpage with two dropdowns that 
 allow the user to select the Season and Weather conditions. Upon pressing the submit 
-button, a table of fish that can be caught in the selected conditions will be shown.
+button, a table of fish that can be caught in the selected conditions will be shown. 
+This portion of the app is hosted on Github Pages and linked above.
 
 ### Backend
 
@@ -24,23 +27,75 @@ following :
 - includes a route that returns all fish data as a json
 - includes a route that returns fish filtered by specific season and weather conditions
 
-## How to Start Components
+## How I Deployed/Hosted each Component
 
 ### Frontend
 
+I used the steps/documentation from [here.](https://github.com/gitname/react-gh-pages)
+
 Navigate to the project directory (frontend):
 
-`cd frontend`
+```shell
+$ cd frontend
+```
 
-In the project directory (frontend), you can run:
+#### 1. Install the `gh-pages` npm package and designate it as a development dependancy:
 
-`npm run start`
+```shell
+$ npm install gh-pages --save-dev
+```
 
-Runs the frontent app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### 2. Add a `homepage` property to your `package.json` file
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```diff
+{
+    "name": "my-app",
+    "version": "0.1.0",
++ "homepage": "https://gitname.github.io/react-gh-pages",
+    "private": true,
+```
+
+At this point, the React app's `package.json` file includes a property named `homepage`.
+
+#### 3. Add deployment scripts to the `package.json` file
+
+Add a `predeploy` property and a `deploy` property to the `scripts` object:
+
+```diff
+    "scripts": {
++   "predeploy": "npm run build",
++   "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+```
+
+At this point, the React app's `package.json` file includes deployment scripts.
+
+#### 4. Add a "remote" that points to the GitHub repository
+
+You can do that by issuing a command in this format:
+
+```shell
+$ git remote add origin https://github.com/{username}/{repo-name}.git
+```
+
+In my case, I'll run:
+
+```shell
+$ git remote add origin https://github.com/aj132608/FishFinder.git
+```
+
+#### 5. Push the React app to the GitHub repository
+
+Type the following command to use your added scripts:
+
+```shell
+$ npm run deploy
+```
+
+#### 6 Configure Github Pages
+
+To successfully host the webpage, you must go to the Github Pages settings and save. More info is in the documentation link at the top.
 
 ### Backend
 
