@@ -45,11 +45,6 @@ function App() {
         <div className='output-div'>
           {displayTable}
         </div>
-        {/* <div className='promo-background-div'>
-          <p style={{textAlign: 'center'}}>Check out source code <a href='https://github.com/aj132608/FishFinder' 
-                                      target="_blank" rel="noreferrer noopener"> here</a>
-          </p>
-        </div> */}
         <p>Check out source code <a href='https://github.com/aj132608/FishFinder' 
                                     target="_blank" rel="noreferrer noopener"> here</a>
         </p>
